@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Simulation de feu de forêt</title>
+</head>
+<body>
+<h1>Simulation de feu de foret</h1>
+<form th:object="${foret}" th:action="@{/feu-foret}" method="post">
+    <label>Height:</label>
+    <input type="number" th:field="*{hauteur}"/><br/>
+    <label>Width:</label>
+    <input type="number" th:field="*{largeur}"/><br/>
+    <button type="submit">Simulation</button>
+</form>
+</body>
+</html>
